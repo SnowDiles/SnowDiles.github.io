@@ -1,0 +1,431 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0d172a;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+}
+
+.promo {
+  height: 40px;
+  width: 100%;
+  background-color: #a93fda;
+  color: white;
+  font-size: 24px;
+  position: fixed;
+  align-items: center;
+  padding-top: 5px;
+  z-index: 1;
+}
+
+@media screen and (max-width: 800px) {
+  .logonav {
+    display: none;
+  }
+
+  .contentnav h1 {
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar ul {
+    transform: scale(0.8);
+    justify-content: center;
+  }
+
+  .navbar {
+    margin-right: -60px;
+  }
+
+  .contentnav {
+    margin-top: 30px;
+  }
+
+  .result {
+    flex-direction: column;
+  }
+
+  body{
+
+    overflow-x: hidden;
+  }
+}
+
+@keyframes promo {
+  0% {
+    left: -10%;
+  }
+
+  100% {
+    left: 100%;
+  }
+}
+
+.promo p {
+  animation-name: promo;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  position: relative;
+}
+
+.promo:hover p {
+  animation-name: promo;
+  animation-duration: 0s;
+  animation-timing-function: linear;
+  text-align: center;
+}
+
+.promo a {
+  color: white;
+  text-decoration: none;
+}
+
+.promo p:hover {
+  cursor: pointer;
+}
+
+header {
+  width: 100%;
+  height: 300px;
+}
+
+.navcontain a {
+  color: white;
+  text-decoration: none;
+}
+
+.navcontain {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  top: 30px;
+  font-size: 30px;
+}
+
+.navcontain ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  padding-right: 20px;
+  justify-content: end;
+}
+
+.navbar {
+  width: 100%;
+}
+
+.navcontain {
+  justify-content: space-around;
+  padding-top: 50px;
+}
+
+.navcontain li {
+  margin-right: 20px;
+}
+
+.navcontain li:hover {
+  color:#4D4DFF;
+  cursor: pointer;
+}
+
+.contact {
+  color:#4D4DFF;
+}
+
+.logonav {
+  width: 150px;
+  height: 150px;
+  background: url(images/logo.png);
+  margin-top: -35px;
+}
+
+.formulairecontain {
+  width: 45%;
+  margin: auto;
+  text-align: center;
+  color: white;
+  background-color: black;
+  border: #4D4DFF 1px solid;
+  margin-top: 100px;
+  height: 700px;
+  padding-top: 50px;
+  box-shadow: inset 5px 3px 20px 4px #4D4DFF;
+  transform: scale(1.2);
+}
+
+li {
+  list-style-type: none;
+}
+
+.formulairecontain h1 {
+  color: #4D4DFF;
+
+}
+
+.formulairecontain p {
+  font-size: larger;
+  width: 60%;
+  margin: auto;
+  padding-top: 20px;
+}
+
+
+.formulairecontain input{
+
+
+  width: 55%;
+  margin-top: 5px;
+  background-color:#333338;
+  color: white;
+  border-radius: 0.3em;
+  padding-left: 10px;
+  border: none;
+  position: relative;
+  right: 0%;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+} 
+
+.formulairecontain textarea{
+
+  width: 55%;
+  margin-top: 5px;
+  background-color:#333338;
+  color: white;
+  border-radius: 0.3em;
+  padding-left: 10px;
+  border: none;
+  position: relative;
+  right: 0%;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.formulairecontain select {
+
+  width: 55%;
+  margin-top: 5px;
+  background-color:#333338;
+  color:white;
+  border-radius: 0.3em;
+  padding-left: 10px;
+  border: none;
+  position: relative;
+  right: 0%;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  
+}
+
+.formulairecontain button{
+
+  width: 55%;
+  margin-top: 5px;
+  background-color:#333338;
+  color:white;
+  border-radius: 0.3em;
+  padding-left: 10px;
+  border: none;
+  position: relative;
+  right: 0%;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+textarea{
+
+  width: 55%;
+  height: 80px;
+  border-radius: 0;
+  resize: none;
+}
+
+.formulairecontain ul{
+
+  width: 40%;
+  text-align: start;
+  margin: auto;
+
+} 
+
+.formulairecontain::placeholder{
+
+
+  color:black;
+  
+}
+
+
+.formwidth{
+
+
+  width: fit-content;
+  margin: auto;
+  overflow:scroll;
+  overflow-x: hidden;
+}
+
+.formulairecontain ::-webkit-scrollbar {
+  background-color: black;
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .formulairecontain{
+    margin-top: 200px;
+    width: 80%;
+    
+  }
+
+  .formulairecontain input{
+
+    width: 100%;
+  }
+
+  .formulairecontain textarea{
+
+    width: 100%;
+  }
+
+  .formulairecontain select{
+
+    width: 100%;
+  }
+
+  .formulairecontain button{
+
+
+    padding-left: -30px;
+  }
+   
+}
+
+
+
+/* Debut section newsletter */
+
+.newsletter {
+  width: 100%;
+  height: 300px;
+  background-color: #060c22;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 200px;  
+  color: white;
+}
+.newsletter input {
+  background: #fff;
+  color: #060c22;
+  border: 0;
+  outline: none;
+  margin: 0;
+  padding: 9px 20px;
+  border-radius: 50px;
+  font-size: 14px;
+  width: 250px;
+  
+}
+
+.newsletter button {
+  border: 0;
+  padding: 9px 25px;
+  cursor: pointer;
+  background-color: #f82249;
+  color: white;
+  transition: all 0.3s ease;
+  outline: none;
+  font-size: 14px;
+  border-radius: 50px;
+}
+
+.newsletter button:hover {
+  background-color: #f83a5c;
+}
+
+.newsletter_contain {
+  padding-top: 50px;
+}
+
+.newsletter_contain .form {
+  padding-top: 20px;
+  color: black;
+}
+
+.newsletter h2,p{
+
+
+  font-size: 25px;
+  padding-bottom: 10px;
+}
+
+
+
+
+
+/* Fin de la section */
+
+/* Le footer */
+
+footer {
+  width: 100%;
+  height: 300px;
+  border-top: #4D4DFF 3px solid;
+  border-bottom: #4D4DFF 3px solid;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: white;
+}
+
+footer li {
+  list-style-type: none;
+  padding-bottom: 5px;
+}
+
+footer h2 {
+  color: #4D4DFF;
+  padding-bottom: 10px;
+  padding-top: 60px;
+}
+footer a{
+
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover{
+
+  color:#4D4DFF;
+
+}
+
+.copyright {
+  text-align: center;
+  height: 40px;
+  color: #4D4DFF;
+  padding-top: 10px;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+text{
+
+
+  color: black;
+}
+

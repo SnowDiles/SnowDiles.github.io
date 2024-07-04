@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #111214;
+  font-family: "Montserrat", sans-serif;
+  height: 100vh;
+  /* border: #4d4dff 1px solid; */
+  /* box-shadow: inset 5px 3px 20px 4px #4d4dff; */
+  overflow-y: hidden;
+
+  background:
+      conic-gradient(from 0deg at calc(500%/6) calc(100%/3),#6f7582 0 120deg,#0000 0),
+      conic-gradient(from -120deg at calc(100%/6) calc(100%/3),#40444b 0 120deg,#0000 0),
+      conic-gradient(from 120deg at calc(100%/3) calc(500%/6),#111214 0 120deg,#0000 0),
+      conic-gradient(from 120deg at calc(200%/3) calc(500%/6),#111214 0 120deg,#0000 0),
+      conic-gradient(from -180deg at calc(100%/3) 50%,#40444b  60deg,#111214 0 120deg,#0000 0),
+      conic-gradient(from 60deg at calc(200%/3) 50%,#111214  60deg,#6f7582 0 120deg,#0000 0),
+      conic-gradient(from -60deg at 50% calc(100%/3),#111214 120deg,#40444b 0 240deg,#6f7582 0);
+background-size: 80px 46px;
+
+}
+
+
+.gendercontain{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+
+@keyframes bounce{
+
+
+    0%{
+
+        transform:translateY(0);
+        
+    }
+
+    50%{
+
+        transform: translateY(-30px);
+    }
+
+    75%{
+
+        transform: translateY(-15px);
+    }
+
+    100%{
+
+        transform: translateY(0);
+    }
+}
+
+.box {
+  width: 35%;
+  height: 550px;
+  background-color: black;
+  margin: auto;
+}
+
+
+.men{
+
+    background: url(images/men.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 3px solid blue;
+    box-shadow: 10px 10px 5px 0px rgb(0, 0, 161);
+    
+}
+
+.women{
+
+
+    background: url(images/women.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 3px solid pink;
+    box-shadow: 10px 10px 5px 0px rgb(168, 127, 134);
+}
+
+
+.hovermen{
+
+    width:100%;
+    height: 550px;
+    background-color: #4d4dff;
+    opacity: 0.4;
+    display:none;
+    color: white;
+}
+
+.hoverwomen{
+
+    width:100%;
+    height: 550px;
+    background-color: #f94dff;
+    opacity: 0.4;
+    display:none;
+    color:black;
+}
+
+.hovermen p{
+
+
+    width: 60%;
+    margin: auto;
+    color: red;
+    font-size: 40px;
+}
+
+.women:hover .hoverwomen{
+
+
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 25px;
+  
+   
+}
+
+.men:hover .hovermen{
+
+
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 25px;
+   
+}
+
+.men:hover{
+
+    animation-name: bounce;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+   
+}
+
+.women:hover{
+
+    animation-name: bounce;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+a{
+
+
+    color: none;
+    text-decoration: none;
+}
+
+@media screen and (max-width:600px){
+
+
+    .gendercontain{
+
+        flex-direction: column;
+    }
+
+    .women{
+
+
+        margin-top: 50px;
+        width: 80%;
+
+    }
+
+    .men{
+
+        margin-top: 30px;
+        width: 80%;
+
+    }
+}
+

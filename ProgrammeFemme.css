@@ -1,0 +1,650 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0d172a;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  overflow-x: hidden;
+
+}
+
+button {
+  cursor: pointer;
+  background-color: #F9629F;
+  border: none;
+  color: white;
+  font-size: 23px;
+}
+
+header {
+  width: 100%;
+  height: 300px;
+}
+
+.navcontain a {
+  color: white;
+  text-decoration: none;
+}
+
+.navcontain {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  top: 30px;
+  font-size: 30px;
+}
+
+.navcontain ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  padding-right: 20px;
+  justify-content: end;
+}
+
+.navbar {
+  width: 100%;
+}
+
+.navcontain {
+  justify-content: space-around;
+  padding-top: 50px;
+}
+
+.navcontain li {
+  margin-right: 20px;
+}
+
+.navcontain li:hover {
+  color: #F9629F;
+  cursor: pointer;
+}
+
+.accueil {
+  color: #F9629F;
+}
+
+.logonav {
+  width: 150px;
+  height: 150px;
+  background: url(images/logo.png);
+  margin-top: -35px;
+}
+
+.contentnav {
+  width: 100%;
+  height: 500px;
+
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  align-content: center;
+}
+
+.contentnav h1 {
+  color: #a93fda;
+}
+
+header button {
+  border-radius: 0.2em;
+  transform: scale(3);
+  background-color: #a93fda;
+  color: white;
+  border: none;
+  width: 80px;
+
+  height: 20px;
+}
+
+header button:hover {
+  border: 1px solid white;
+  box-shadow: white 2px 2px, white 3px 3px, #a93fda 5px 5px;
+  transition: all 0.2s linear;
+}
+
+.maintitle{
+
+  font-size: 80px;
+}
+
+@media screen and (max-width: 800px) {
+  .logonav {
+    display: none;
+  }
+
+  .contentnav h1 {
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar ul {
+    transform: scale(0.8);
+    justify-content: center;
+  }
+
+  .contentnav {
+    margin-top: 30px;
+  }
+
+  .result {
+    flex-direction: column;
+  }
+
+  .maintitle{
+
+    font-size: 50px;
+  }
+
+  .resultcontent p {
+
+    height: 60%;
+  }
+
+}
+
+/* Nos resultats section */
+
+.resultsection {
+  color: white;
+  margin-top: 150px;
+  width: 100%;
+}
+
+.resultsection {
+  text-align: center;
+  font-size: 100px;
+}
+
+.imgresult {
+  height: 600px;
+  width: 48%;
+  display: flex;
+}
+
+.descresult {
+  height: 600px;
+  width: 48%;
+  background-color: black;
+  align-content: center;
+  border: #F9629F 1px solid;
+  box-shadow: inset 5px 3px 20px 4px #F9629F;
+}
+
+
+.result {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.resultcontent {
+  height: 50%;
+  width: 50%;
+
+  margin: auto;
+  font-size: 30px;
+  overflow-x: hidden;
+}
+
+.resultcontent p {
+  overflow: auto;
+  height: 45%;
+  overflow-x: hidden;
+}
+
+.resultcontent h1 {
+  font-size: 50px;
+  padding-bottom: 10px;
+}
+
+.resultcontent button {
+  height: 50px;
+  margin-top: 20px;
+  width: 150px;
+  font-size: 16px;
+  font-weight: 50px;
+}
+
+.resultcontent::-webkit-scrollbar {
+  background-color: black;
+}
+
+.resultcontent button:hover {
+  background-color: #F9629F;
+  border: 1px solid white;
+  border-radius: 0.2em;
+  transform: translateY(-5px);
+}
+
+.resultcontent ::-webkit-scrollbar {
+  background-color: black;
+}
+
+.resultcontent ::-webkit-scrollbar-thumb {
+  background-color: #F9629F;
+  border-radius: 4em;
+  margin-left: 10px;
+}
+
+.resultcontent ::-webkit-scrollbar-corner {
+  background-color: black;
+}
+
+.result2 {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.imgresult1 {
+  display: flex;
+  background: url(images/girlforce.jpg);
+  background-attachment: fixed;
+  background-size: contain;
+  background-position-x: -200px;
+}
+
+.imgresult2 {
+  background: url(images/croissance.jpg);
+
+  background-attachment: fixed;
+  background-size: contain;
+  background-position-x: -1100px;
+}
+
+.imgresult3 {
+  background: url(images/tonicité.jpg);
+  background-attachment: fixed;
+  background-size: contain;
+  background-position-x: -200px;
+}
+
+.imgresult4 {
+  background: url(images/coaching3.jpg);
+  background-attachment: fixed;
+  background-size: contain;
+  background-position: right;
+  background-position-x: -570px;
+}
+
+@media screen and (max-width: 600px) {
+  .result {
+    flex-direction: column;
+    margin: auto;
+    width: 80%;
+  }
+
+  .imgresult {
+    width: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .descresult {
+    width: auto;
+  }
+
+  .presentation {
+    flex-direction: column;
+  }
+}
+
+/* Fin de la section avant apres */
+
+
+/* Debut section newsletter */
+
+.newsletter {
+  width: 100%;
+  height: 300px;
+  background-color: #060c22;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.newsletter input {
+  background: #fff;
+  color: #060c22;
+  border: 0;
+  outline: none;
+  margin: 0;
+  padding: 9px 20px;
+  border-radius: 50px;
+  font-size: 14px;
+  width: 250px;
+}
+
+.newsletter h2,
+p {
+
+  color: white;
+}
+
+.newsletter button {
+  border: 0;
+  padding: 9px 25px;
+  cursor: pointer;
+  background-color: #f82249;
+  color: white;
+  transition: all 0.3s ease;
+  outline: none;
+  font-size: 14px;
+  border-radius: 50px;
+}
+
+.newsletter button:hover {
+  background-color: #f83a5c;
+}
+
+.newsletter_contain {
+  padding-top: 50px;
+}
+
+.newsletter_contain .form {
+  padding-top: 20px;
+}
+
+.newsletter h2,
+p {
+
+
+  font-size: 25px;
+  padding-bottom: 10px;
+}
+
+.newsletter {
+
+  margin-top: 70px;
+}
+
+
+/* Fin de la section */
+
+/* Le footer */
+
+footer {
+  width: 100%;
+  height: 300px;
+  border-top: #F9629F 3px solid;
+  border-bottom: #F9629F 3px solid;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: white;
+}
+
+footer li {
+  list-style-type: none;
+  padding-bottom: 5px;
+}
+
+footer h2 {
+  color: #F9629F;
+  padding-bottom: 10px;
+  padding-top: 60px;
+}
+
+footer a{
+
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover{
+
+  color: #F9629F;
+
+}
+
+.copyright {
+  text-align: center;
+  height: 40px;
+  color: #F9629F;
+  padding-top: 10px;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+
+
+/* La modal de payement */
+
+
+
+.m {
+
+  position: absolute;
+
+  top: 230px;
+  left: 0;
+
+  background-color: white;
+  color: black;
+  opacity: 10;
+  z-index: 100;
+  width: 30%;
+  height: 460px;
+  border: black 1px solid;
+  display: none;
+  margin-left: 34%;
+
+  border-radius: 2em;
+  opacity: 0;
+  
+
+}
+
+.m li {
+
+  list-style-type: none;
+}
+
+@keyframes modaltransition{
+
+  from{
+
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+  
+  to{
+
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+
+}
+
+
+body:has(#navredirect:target) .modal1 {
+  display: block;
+  opacity: 1;
+  transform: translate(0%, 0%);
+  animation-name: modaltransition;
+  animation-duration: 3s;
+  opacity: 1;
+}
+
+body:has(#navredirect2:target) .modal2 {
+  display: block;
+  opacity: 1;
+  transform: translate(0%, 0%);
+  animation-name: modaltransition;
+  animation-duration: 3s;
+  opacity: 1;
+
+}
+
+body:has(#navredirect3:target) .modal3 {
+  display: block;
+  opacity: 1;
+  transform: translate(0%, 0%);
+  animation-name: modaltransition;
+  animation-duration: 3s;
+  opacity: 1;
+
+}
+
+
+body:has(#navredirect:target) {
+
+  overflow-y: hidden;
+  transition: all 20s linear;
+}
+
+body:has(#navredirect:target) .resultsection {
+
+  filter: blur(50px);
+
+}
+
+body:has(#navredirect2:target) {
+
+  overflow-y: hidden;
+}
+
+body:has(#navredirect2:target) .resultsection {
+
+  filter: blur(50px);
+
+}
+
+body:has(#navredirect3:target) {
+
+  overflow-y: hidden;
+}
+
+body:has(#navredirect3:target) .resultsection {
+
+  filter: blur(50px);
+
+}
+
+
+.modalheader {
+
+
+  font-size: 15px;
+  font-weight: 100;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding-left: 30px;
+  padding-top: 10px;
+  padding-right: 10px;
+
+}
+
+.modalheader a {
+
+  text-decoration: none;
+  font-size: 20px;
+  color: rgb(180, 176, 176);
+  font-weight: 9000px;
+  align-self: self-start;
+  justify-self: end;
+
+}
+
+.modalbody p {
+
+  text-align: center;
+  padding-top: 10px;
+  color: red;
+}
+
+.modalbody {
+
+  margin: auto;
+  padding-bottom: 20px;
+}
+
+.modalbody ul,
+li {
+
+  width: 95%;
+  margin: auto;
+  padding-left: 20px;
+}
+
+.modalbody input {
+
+  width: 90%;
+  margin: auto;
+  margin-top: 30px;
+  height: 40px;
+  padding-left: 10px;
+  border-radius: 0.3rem;
+
+}
+
+.modalbody input:focus::placeholder {
+  color: blue;
+}
+
+.modalfooter {
+  margin-top: 17px;
+  height: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding-top: 13px;
+
+}
+
+.modalfooter a{
+
+  color: white;
+  text-decoration: none;
+}
+
+
+.confirmer {
+
+  background-color: rgb(14, 202, 14);
+  color: white;
+  border-radius: 1em;
+  width: 120px;
+  height: 30px;
+}
+
+.annuler {
+
+  background-color: red;
+  color: white;
+  margin-left: 15px;
+  border-radius: 1em;
+  width: 120px;
+  height: 30px;
+  margin-right: 30px;
+
+}
+
+@media screen and (max-width:600px) {
+
+  .m {
+
+    width: 70%;
+    margin-left: 80px;
+  }
+
+  .modal2{
+
+
+    position: absolute;
+    left: 0px;
+  }
+
+}
