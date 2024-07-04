@@ -13,6 +13,8 @@ body {
   font-weight: 300;
 }
 
+
+
 .promo {
   height: 40px;
   width: 100%;
@@ -429,3 +431,34 @@ text{
   color: black;
 }
 
+
+@media screen and (max-width:400px){
+
+  .promo p{
+
+    width: 2000px;
+    
+  }
+
+  
+
+  .formulairecontain{
+
+    height: 800px;
+  }
+
+  .navcontain{
+
+    margin-left: 200px;
+    font-size: 20px;
+  }
+
+  body{
+    overflow-x: hidden;
+  }
+
+  .img{
+
+    width: 100px;
+  }
+}

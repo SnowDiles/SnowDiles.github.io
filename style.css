@@ -70,6 +70,7 @@ button {
   }
 }
 
+
 .video {
   position: absolute;
   top: 50%;
@@ -622,4 +623,45 @@ footer a:hover{
   font-size: 20px;
 }
 
+
+/* Fixing responsive for Iphone 13 */
+@media  screen and (max-width:400px) {
+
+
+  .promo p{
+
+    width: 2000px;
+  }
+
+  .promo{
+
+
+    max-width: 100%;
+  }
+
+  body{
+
+    min-width: 100%;
+    width: 600px;
+    font-size: 20px;
+    margin-left: -30px;
+  }
+
+  body h1{
+
+    font-size: 30px;
+  }
+  
+
+  .imgresult{
+
+    background-attachment: scroll;
+  }
+
+  .maintitle{
+
+    font-size: 10px;
+  }
+  
+}
 

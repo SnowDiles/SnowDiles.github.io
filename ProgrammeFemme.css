@@ -648,3 +648,83 @@ li {
   }
 
 }
+
+/* Fixing responsive for Iphone 13 */
+@media  screen and (max-width:400px) {
+
+
+  .promo p{
+
+    width: 2000px;
+  }
+
+  .promo{
+
+
+    max-width: 100%;
+  }
+
+  body{
+
+    min-width: 100%;
+    width: 600px;
+    font-size: small;
+    margin-left: -30px;
+  }
+
+  .imgresult{
+
+    background-attachment: scroll;
+  }
+
+  .maintitle{
+
+    font-size: 10px;
+  }
+
+  .footer {
+
+    color: red;
+  }
+}
+
+@media screen and (max-width:400px){
+
+  .promo p{
+
+    width: 2000px;
+    
+  }
+
+  
+
+  .formulairecontain{
+
+    height: 800px;
+  }
+
+  .navcontain{
+
+    margin-left: 20px;
+    font-size: 20px;
+  }
+
+  body{
+    overflow-x: hidden;
+  }
+
+  .img{
+
+    width: 100px;
+  }
+
+  .imgresult{
+
+    background-attachment: fixed;
+  }
+
+  body{
+
+    font-size: 10px;
+  }
+}
