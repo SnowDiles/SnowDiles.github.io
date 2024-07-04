@@ -278,11 +278,12 @@ header button:hover {
 }
 
 .resultcontent button {
-  height: 50px;
+  height: 60px;
   margin-top: 20px;
-  width: 200px;
+  width: 220px;
   font-size: 23px;
   font-weight: 50px;
+  padding: 20px;
 }
 
 
@@ -548,7 +549,7 @@ header button:hover {
   border: 0;
   padding: 9px 25px;
   cursor: pointer;
-  background-color: #f82249;
+  background-color: #ff002f;
   color: white;
   transition: all 0.3s ease;
   outline: none;
@@ -641,10 +642,11 @@ footer a:hover{
 
   body{
 
-    min-width: 100%;
-    width: 600px;
+    max-width: 100vh;
+    width: 599px;
     font-size: 20px;
     margin-left: -30px;
+    
   }
 
   body h1{
