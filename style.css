@@ -31,11 +31,6 @@ button {
   }
 } 
 
-.firsttitle{
-
-  animation: text-clip 3s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
-}
-
 @media screen and (max-width: 800px) {
   .logonav {
     display: none;
