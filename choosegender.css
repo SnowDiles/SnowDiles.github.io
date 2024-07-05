@@ -13,16 +13,7 @@ body {
   /* border: #4d4dff 1px solid; */
   /* box-shadow: inset 5px 3px 20px 4px #4d4dff; */
   overflow-y: hidden;
-
-  background:
-      conic-gradient(from 0deg at calc(500%/6) calc(100%/3),#6f7582 0 120deg,#0000 0),
-      conic-gradient(from -120deg at calc(100%/6) calc(100%/3),#40444b 0 120deg,#0000 0),
-      conic-gradient(from 120deg at calc(100%/3) calc(500%/6),#111214 0 120deg,#0000 0),
-      conic-gradient(from 120deg at calc(200%/3) calc(500%/6),#111214 0 120deg,#0000 0),
-      conic-gradient(from -180deg at calc(100%/3) 50%,#40444b  60deg,#111214 0 120deg,#0000 0),
-      conic-gradient(from 60deg at calc(200%/3) 50%,#111214  60deg,#6f7582 0 120deg,#0000 0),
-      conic-gradient(from -60deg at 50% calc(100%/3),#111214 120deg,#40444b 0 240deg,#6f7582 0);
-background-size: 80px 46px;
+  background-color:#6f7582;
 
 }
 
